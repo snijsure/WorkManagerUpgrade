@@ -8,6 +8,7 @@ import androidx.work.WorkManager
 
 class UpgradeReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
+        Log.d(TAG, "UpgradeReceiver intent " + intent.action)
         if (intent.action == Intent.ACTION_MY_PACKAGE_REPLACED) {
             val workManager = WorkManager.getInstance(context)
             val removedWorkers = listOf("com.snijsure.workmanagerupgrade.SampleWorker")
