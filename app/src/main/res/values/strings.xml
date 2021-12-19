@@ -12,4 +12,5 @@
     <string name="start_work">Start Work</string>
     <string name="work_already_started">Work is already scheduled</string>
     <string name="new_work_started">Work is now scheduled</string>
+    <string name="worker_removed">Worker has been removed , wait 15 min for exception</string>
 </resources>
